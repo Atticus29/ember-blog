@@ -106,3 +106,7 @@ width: 100%;
 .large{
   margin-top: 800px;
 }
+
+#error{
+  display: none;
+}
