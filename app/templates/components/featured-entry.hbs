@@ -10,5 +10,21 @@
     <p>
       {{blog.Body}}
     </p>
+    <button {{action 'updateEntryForm' blog}} class="btn btn-primary">Edit</button>
+    <button {{action 'delete' blog}} class="btn btn-danger">Delete</button>
+  </div>
+  <div class="panel panel-footer">
+    {{#if blog.life}}
+      <button type="button" name="button">Life</button>
+    {{/if}}
+    {{#if blog.career}}
+      <button type="button" name="button">Career</button>
+    {{/if}}
+    {{#if blog.entertainment}}
+      <button type="button" name="button">Entertainment</button>
+    {{/if}}
+    {{#if blog.hobbies}}
+      <button type="button" name="button">Hobbies</button>
+    {{/if}}
   </div>
 </div>

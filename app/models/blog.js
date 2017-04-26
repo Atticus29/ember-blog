@@ -7,5 +7,8 @@ export default DS.Model.extend({
   Body: DS.attr(),
   image: DS.attr(),
   dailyStory: DS.attr(),
-  tags: DS.attr()
+  life:  DS.attr(),
+  career:  DS.attr(),
+  entertainment:  DS.attr(),
+  hobbies:  DS.attr()
 });

@@ -1,3 +1,7 @@
+body{
+  background-color: black;
+}
+
 .thumbnail-image{
   max-width: 100%;
 }

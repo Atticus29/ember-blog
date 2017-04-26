@@ -1,5 +1,29 @@
+
 <div class="col-md-3">
-  <h1>{{blog.title}}</h1>
-  <h3>{{blog.date}}</h3>
-  {{#link-to 'blog-detail' blog.id}}<img src={{blog.image}} alt="stock photo" class="thumbnail-image">{{/link-to}}
+  <div class="panel panel-default">
+    <div class="panel panel-heading">
+      <h3>{{blog.title}}</h3>
+    </div>
+    <div class="panel panel-body">
+      <h4>{{blog.date}}</h4>
+      {{#link-to 'blog-detail' blog.id}}<img src={{blog.image}} alt="stock photo" class="thumbnail-image">{{/link-to}}
+      {{update-entry blog=blog update="update"}}
+      <!-- <button {{action 'update' blog}} class="btn btn-primary">Edit</button> -->
+      <button {{action 'delete' blog}} class="btn btn-danger">Delete</button>
+    </div>
+    <div class="panel panel-footer">
+      {{#if blog.life}}
+        <button type="button" name="button">Life</button>
+      {{/if}}
+      {{#if blog.career}}
+        <button type="button" name="button">Career</button>
+      {{/if}}
+      {{#if blog.entertainment}}
+        <button type="button" name="button">Entertainment</button>
+      {{/if}}
+      {{#if blog.hobbies}}
+        <button type="button" name="button">Hobbies</button>
+      {{/if}}
+    </div>
+  </div>
 </div>

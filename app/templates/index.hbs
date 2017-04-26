@@ -1,14 +1,12 @@
-<h1>Test</h1>
-
 <div class="row">
   {{#each model as |blog|}}
     {{#if blog.dailyStory}}
-      {{featured-entry blog=blog}}
+      {{featured-entry blog=blog update="update" destroyEntry="destroyEntry"}}
     {{/if}}
   {{/each}}
   {{#each model as |blog|}}
     {{#unless blog.dailyStory}}
-      {{blog-entry blog=blog}}
+      {{blog-entry blog=blog update="update" destroyEntry="destroyEntry"}}
     {{/unless}}
   {{/each}}
 </div>
