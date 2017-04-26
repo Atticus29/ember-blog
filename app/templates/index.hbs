@@ -2,6 +2,13 @@
 
 <div class="row">
   {{#each model as |blog|}}
-    {{blog-entry blog=blog}}
+    {{#if blog.dailyStory}}
+      {{featured-entry blog=blog}}
+    {{/if}}
+  {{/each}}
+  {{#each model as |blog|}}
+    {{#unless blog.dailyStory}}
+      {{blog-entry blog=blog}}
+    {{/unless}}
   {{/each}}
 </div>

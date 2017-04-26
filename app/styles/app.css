@@ -1,0 +1,9 @@
+.thumbnail-image{
+  max-width: 100%;
+}
+
+.full-detail-image{
+  max-width: 100%;
+  float: right;
+  padding: 2%;
+}
