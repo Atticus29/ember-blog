@@ -1,4 +1,14 @@
 
+<script>
+$(document).ready(function() {
+$("[data-toggle]").click(function() {
+  var toggle_el = $(this).data("toggle");
+  $(toggle_el).toggleClass("open-sidebar");
+  $('#sidebar').toggleClass('change-sidebar');
+});
+
+});
+</script>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbar-collapse">
@@ -18,15 +28,25 @@
 </nav>
 <div class="">
 </div>
-<div class="container">
-  <!-- <div id="sidebar">
-    <ul>
-      <li><a href="#">Home</a></li>
+<div id="sidebar">
+  <ul>
+    <li>{{#link-to 'new-entry' save="save"}}Create New Entry{{/link-to}}</li>
+    <!-- <li>Categories</li>
+    <ul> -->
       <li><a href="#">Explore</a></li>
       <li><a href="#">Users</a></li>
       <li><a href="#">Sign Out</a></li>
-    </ul>
-  </div> -->
+    <!-- </ul> -->
+  </ul>
+</div>
+<div class="container main-content">
+  <div class="swipe-area"></div>
+  <a href="#" data-toggle=".main-content" id="sidebar-toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <br>
   {{outlet}}
   <footer>
     <br>

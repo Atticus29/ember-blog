@@ -17,6 +17,11 @@ export default Ember.Route.extend({
     destroyEntry(entry){
       entry.destroyRecord();
       this.transitionTo('index');
+    },
+    save(params){
+      var newEntry = this.store.createRecord('blog', params);
+      newEntry.save();
+      this.transitionTo('index');
     }
   }
 });
