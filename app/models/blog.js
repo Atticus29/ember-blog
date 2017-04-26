@@ -6,9 +6,9 @@ export default DS.Model.extend({
   author: DS.attr(),
   Body: DS.attr(),
   image: DS.attr(),
-  dailyStory: DS.attr(),
-  life:  DS.attr(),
-  career:  DS.attr(),
-  entertainment:  DS.attr(),
-  hobbies:  DS.attr()
+  dailyStory: DS.attr('boolean', {defaultValue: false}),
+  life:  DS.attr('boolean', {defaultValue: false}),
+  career:  DS.attr('boolean', {defaultValue: false}),
+  entertainment:  DS.attr('boolean', {defaultValue: false}),
+  hobbies:  DS.attr('boolean', {defaultValue: false})
 });
