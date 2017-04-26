@@ -1,1 +1,7 @@
 <h1>Test</h1>
+
+<div class="row">
+  {{#each model as |blog|}}
+    {{blog-entry blog=blog}}
+  {{/each}}
+</div>

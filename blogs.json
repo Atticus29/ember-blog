@@ -5,7 +5,8 @@
     "title": "Blog entry 1",
     "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, elit eget ornare tristique, mi ligula dignissim diam, vitae consequat purus nunc non nunc. Sed vel mi vitae nisl euismod tristique et at sem. Suspendisse sit amet tristique sem. Donec rutrum, purus non vestibulum posuere, nisl dolor pellentesque ipsum, sodales condimentum erat ex sed enim. Maecenas pretium eleifend rhoncus. In aliquam, lectus et pharetra dapibus, augue metus congue eros, mattis porta urna leo vel mi. Integer faucibus iaculis facilisis. Integer sit amet iaculis massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ac hendrerit lorem.",
     "author": "Bob",
-    "date": "04-26-2017"
+    "date": "04-26-2017",
+    "image": "http://www.imagesource.com/Doc/IS0/Media/CMS3/4/6/8/3/IS09966VO.jpg"
   },
   {
     "tags": ["Life"],
@@ -13,6 +14,7 @@
     "title": "Blog entry 2",
     "Body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor, elit eget ornare tristique, mi ligula dignissim diam, vitae consequat purus nunc non nunc. Sed vel mi vitae nisl euismod tristique et at sem. Suspendisse sit amet tristique sem. Donec rutrum, purus non vestibulum posuere, nisl dolor pellentesque ipsum, sodales condimentum erat ex sed enim. Maecenas pretium eleifend rhoncus. In aliquam, lectus et pharetra dapibus, augue metus congue eros, mattis porta urna leo vel mi. Integer faucibus iaculis facilisis. Integer sit amet iaculis massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec ac hendrerit lorem.",
     "author": "Bob",
-    "date": "04-26-2017"
+    "date": "04-26-2017",
+    "image": "http://thecrux.com/wp-content/uploads/2015/12/computer-chip-1024x681.jpg"
   }]
 }
