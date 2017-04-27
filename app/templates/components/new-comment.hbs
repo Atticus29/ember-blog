@@ -1,1 +1,29 @@
-{{yield}}
+<div class="panel panel-default">
+  {{#if showNewComment}}
+    <div class="panel-heading">
+      <h2>Add new comment:</h2>
+    </div>
+    <div class="panel-body">
+      <form>
+        <div class="form-group">
+          <label>Author:</label>
+          {{input type="text" name="author" value=author}}
+        </div>
+        <div class="form-group">
+          <label>Date:</label>
+          {{input type="text" name="date" value=date}}
+        </div>
+        <div class="form-group">
+          <label>Body:</label>
+          {{input type="text" name="body" value=body}}
+        </div>
+        <button {{action 'saveComment'}} class="btn btn-primary">Save</button>
+        <button {{action 'cancel'}} class="btn btn-success">Cancel</button>
+      </form>
+    </div>
+  {{else}}
+    <div class="panel-heading">
+      <button {{action 'showNewComment'}} class="btn btn-primary">Add new comment</button>
+    </div>
+  {{/if}}
+</div>
