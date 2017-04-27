@@ -16,10 +16,8 @@ export default Ember.Component.extend({
           hobbies: this.get('hobbiesChecked') ? this.get('hobbiesChecked') : false,
           dailyStory: this.get('dailyStoryChecked') ? this.get('dailyStoryChecked') : false
         };
-        console.log(params);
         this.sendAction('save', params);
       } else{
-        console.log("failed the check");
         $("#error").show();
       }
     },

@@ -110,3 +110,7 @@ width: 100%;
 #error{
   display: none;
 }
+
+#main-error{
+  display: none;
+}

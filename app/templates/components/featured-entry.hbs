@@ -10,7 +10,8 @@
     <p>
       {{blog.Body}}
     </p>
-    <button {{action 'updateEntryForm' blog}} class="btn btn-primary">Edit</button>
+    <!-- <button {{action 'updateEntryForm' blog}} class="btn btn-primary">Edit</button> -->
+    {{update-entry blog=blog update="update"}}
     <button {{action 'delete' blog}} class="btn btn-danger">Delete</button>
   </div>
   <div class="panel panel-footer">
