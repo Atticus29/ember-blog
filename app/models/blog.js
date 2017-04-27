@@ -10,5 +10,6 @@ export default DS.Model.extend({
   life:  DS.attr('boolean', {defaultValue: false}),
   career:  DS.attr('boolean', {defaultValue: false}),
   entertainment:  DS.attr('boolean', {defaultValue: false}),
-  hobbies:  DS.attr('boolean', {defaultValue: false})
+  hobbies:  DS.attr('boolean', {defaultValue: false}),
+  comments: DS.hasMany('comment', {async: true})
 });
