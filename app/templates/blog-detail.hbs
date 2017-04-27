@@ -13,8 +13,9 @@
         </p>
       </div>
       <div class="panel-footer">
+        <h4>Comments:</h4>
         {{#each model.comments as |comment|}}
-          {{comment-section comment=comment}}
+          {{comment-section comment=comment destroyComment="destroyComment"}}
         {{/each}}
       </div>
     </div>

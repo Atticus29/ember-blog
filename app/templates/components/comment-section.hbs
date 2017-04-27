@@ -1,11 +1,15 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    <h4>{{comment.author}}</h4>
-    <h4>{{comment.date}}</h4>
+    <h5>{{comment.author}}</h5>
+    <h6>{{comment.date}}</h6>
   </div>
   <div class="panel-body">
     <p>
       {{comment.body}}
     </p>
+  </div>
+  <div class="panel-footer">
+    <button {{action 'delete' comment}} class="btn btn-danger">Remove Comment</button>
+    <!-- <button {{action 'edit-comment'}} class="btn btn-danger">Remove Comment</button> -->
   </div>
 </div>
