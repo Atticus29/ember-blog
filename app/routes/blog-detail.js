@@ -12,6 +12,15 @@ export default Ember.Route.extend({
     },
     destroyComment(comment){
       comment.destroyRecord();
+    },
+    updateComment(comment, params){
+      // console.log(comment);
+      Object.keys(params).forEach(key=>{
+        if(params[key]!==undefined){
+          comment.set(key, params[key]);
+        }
+      });
+      comment.save();
     }
   }
 });

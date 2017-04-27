@@ -10,6 +10,6 @@
   </div>
   <div class="panel-footer">
     <button {{action 'delete' comment}} class="btn btn-danger">Remove Comment</button>
-    <!-- <button {{action 'edit-comment'}} class="btn btn-danger">Remove Comment</button> -->
+    {{update-comment comment=comment updateComment="updateComment"}}
   </div>
 </div>

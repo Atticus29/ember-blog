@@ -1,0 +1,23 @@
+{{#if updateCommentForm}}
+<h4>Update {{comment.author}}'s comment</h4>
+<div>
+  <form>
+    <div class="form-group">
+      <label>Author:</label>
+      {{input type="text" name="author" value=author  placeholder=comment.author}}
+    </div>
+    <div class="form-group">
+      <label>Date:</label>
+      {{input type="text" name="date" value=date placeholder=comment.date}}
+    </div>
+    <div class="form-group">
+      <label>Body:</label>
+      {{input type="text" name="body" value=body placeholder=comment.body}}
+    </div>
+    <button {{action 'updateComment' comment}} class="btn btn-primary">Update</button>
+    <button {{action 'cancel'}} class="btn btn-success">Cancel</button>
+  </form>
+</div>
+{{else}}
+<button {{action 'updateCommentForm'}} class="btn btn-warning">Update</button>
+{{/if}}
