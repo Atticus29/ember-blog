@@ -1,5 +1,6 @@
 {
   "name": "blog",
   "dependencies": {
+    "jquery": "^3.2.1"
   }
 }

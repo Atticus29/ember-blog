@@ -1,12 +1,19 @@
 <div class="row">
-  {{#each model as |blog|}}
+  {{#each model.blogs as |blog|}}
     {{#if blog.dailyStory}}
       {{featured-entry blog=blog update="update" destroyEntry="destroyEntry"}}
     {{/if}}
   {{/each}}
-  {{#each model as |blog|}}
+  {{#each model.blogs as |blog|}}
     {{#unless blog.dailyStory}}
       {{blog-entry blog=blog update="update" destroyEntry="destroyEntry"}}
     {{/unless}}
+  {{/each}}
+
+  <br>
+</div>
+<div class="row">
+  {{#each model.comments as |comment|}}
+  {{comment-section comment=comment}}
   {{/each}}
 </div>
